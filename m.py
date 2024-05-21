@@ -5,10 +5,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('6992896284:AAEKciUxToQ3flbL7xfldWZW2U71uLvDD2U')
+bot = telebot.TeleBot('7199195589:AAGGMS8ljOb1BJqnl8p8FEsYBw0agWonoaU')
 
 # Admin user IDs
-admin_id = ["6141252240"]
+admin_id = ["5442965993"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -232,7 +232,7 @@ def handle_bgmi(message):
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
         response = """❌ You Are Not Authorized To Use This Command ❌.
-                      🛒 Please Buy From @RAJA_DDOS"""
+                      🛒 Please Buy From @team_akki"""
 
     bot.reply_to(message, response)
 
@@ -270,8 +270,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-🚀 Buy From :- @RAJA_DDOS
-🚀 Official Channel :- https://t.me/+o-nA8rlXvjw3MDE1
+🚀 Buy From :- @team_akki
+🚀 Official Channel :- https://t.me/SacrificePylOfficals
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -286,9 +286,9 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f'''👋🏻Welcome to The Bot, RAJA 💖
+    response = f'''👋🏻Welcome to The Bot, Akki 💖
                     🤖Feel Free to Explore. 
-                    ✅Join :- https://t.me/+o-nA8rlXvjw3MDE1'''
+                    ✅Join :- https://t.me/SacrificePylOfficals'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
