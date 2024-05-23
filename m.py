@@ -232,7 +232,7 @@ def handle_bgmi(message):
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
         response = """❌ You Are Not Authorized To Use This Command ❌.
-                      🛒 Please Buy From @team_akki"""
+                      🛒 Please Buy From @Shermodder"""
 
     bot.reply_to(message, response)
 
@@ -270,8 +270,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-🚀 Buy From :- @team_akki
-🚀 Official Channel :- https://t.me/SacrificePylOfficals
+🚀 Buy From :- @Shermodder
+🚀 Official Channel :- https://t.me/+bDjQmor4X_s3MDE1
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -286,9 +286,9 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f'''👋🏻Welcome to The Bot, Akki 💖
+    response = f'''👋🏻Welcome to The Bot, Sher 💖
                     🤖Feel Free to Explore. 
-                    ✅Join :- https://t.me/SacrificePylOfficals'''
+                    ✅Join :- https://t.me/https://t.me/+bDjQmor4X_s3MDE1'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
